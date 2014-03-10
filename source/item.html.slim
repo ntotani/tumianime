@@ -1,0 +1,46 @@
+---
+title: item
+---
+
+.page-header
+  h1
+    span.pull-left
+      img.media-object src="https://pbs.twimg.com/profile_images/3501805771/d88bb9965b841e8f6f3dcd354ee4b46f.jpeg" width="64" height="64"
+    | よつばと！
+
+p ちょっとかわった女の子「よつば」と、とーちゃんと、まわりの人たちとのなにげない日常を描いたマンガです。だいたい1日１話のペースで物語はゆっくりと進んでいきます。
+
+h3 最近読んだ人
+
+.list-group.items
+  a.list-group-item href="home.html"
+    span.pull-left
+      img src="https://pbs.twimg.com/profile_images/1610656772/nTotani.jpg" width="64" height="64"
+    div blankblank
+    span.pull-right.glyphicon.glyphicon-chevron-right
+  a.list-group-item href="home.html"
+    span.pull-left
+      img src="https://pbs.twimg.com/profile_images/1713480924/SakeRice_image.jpg" width="64" height="64"
+    div SakeRice
+    span.pull-right.glyphicon.glyphicon-chevron-right
+
+/!a href="http://www.amazon.co.jp/dp/4840224668" target="_blank"
+  img src="http://teampsj.com/amazon/zukai/image/btn_amazon.png"
+
+a.btn.btn-warning.btn-lg.btn-block role="button" href="http://www.amazon.co.jp/dp/4840224668" target="_blank" Amazonで購入する
+a.btn.btn-primary.btn-lg.btn-block role="button" data-toggle="modal" data-target="#confirm" 読了
+
+= partial "layouts/footer"
+
+#confirm.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-body
+        form role="form"
+          .form-group
+            label 感想
+            textarea.form-control
+      .modal-footer
+        a.btn.btn-default data-dismiss="modal" キャンセル
+        a.btn.btn-primary data-dismiss="modal" 決定
+

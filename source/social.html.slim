@@ -1,0 +1,58 @@
+---
+title: social
+---
+
+.page-header
+  h1 交流
+
+ul.nav.nav-tabs
+  li.active
+    a href="#search" data-toggle="tab" レコリク
+  li
+    a href="#recom" data-toggle="tab" レコプシュ
+
+.tab-content
+  #search.tab-pane.active
+    form role="form"
+      .form-group
+        label メディア
+        select.form-control
+          option 漫画
+          option アニメ
+          option ゲーム
+      .form-group
+        label ジャンル
+        select.form-control
+          option ファンタジー
+          option ラブコメ
+          option 日常
+      .form-group
+        label 誰に？
+        select.form-control
+          option 誰かに
+          option blankblank
+          option SakeRice
+    a.btn.btn-primary.btn-lg.btn-block role="button" href="javascript:void 0" 薦めてもらう
+  #recom.tab-pane
+    form role="form"
+      .form-group
+        label メディア
+        select.form-control
+          option 漫画
+          option アニメ
+          option ゲーム
+      .form-group
+        label ジャンル
+        select.form-control
+          option ファンタジー
+          option ラブコメ
+          option 日常
+      .form-group
+        label 誰に？
+        select.form-control
+          option 誰かに
+          option blankblank
+          option SakeRice
+    a.btn.btn-primary.btn-lg.btn-block role="button" href="javascript:void 0" 薦める
+
+= partial "layouts/footer"

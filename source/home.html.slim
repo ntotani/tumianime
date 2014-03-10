@@ -1,0 +1,30 @@
+---
+title: home
+---
+
+.page-header
+  h1 マイページ
+
+p
+  img src="https://pbs.twimg.com/profile_images/1610656772/nTotani.jpg" width="64" height="64"
+
+p アニメ好きです
+
+h3 最近doneしたitem
+
+.list-group.items
+  a.list-group-item href="item.html"
+    span.pull-left
+      img.media-object src="https://pbs.twimg.com/profile_images/3501805771/d88bb9965b841e8f6f3dcd354ee4b46f.jpeg" width="64" height="64"
+    | よつばと！
+    span.pull-right.glyphicon.glyphicon-chevron-right
+  a.list-group-item href="item.html"
+    span.pull-left
+      img.media-object src="https://pbs.twimg.com/profile_images/3413001146/e1b897d093fa5ac35fe0ea381eda4013.jpeg" width="64" height="64"
+    | ラブライブ
+    span.pull-right.glyphicon.glyphicon-chevron-right
+
+a.btn.btn-primary.btn-lg.btn-block role="button" レコリク
+a.btn.btn-primary.btn-lg.btn-block role="button" レコプシュ
+
+= partial "layouts/footer"
